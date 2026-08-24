@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'YOUR_GITHUB_REPOSITORY'
+                git 'https://github.com/prawin03sm/mini-project.git'
             }
         }
 
