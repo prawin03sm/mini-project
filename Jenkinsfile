@@ -25,8 +25,8 @@ pipeline {
             steps {
                 sshagent(['ec2-ubuntu-key'])  {
                     sh '''
-                    scp /home/ubuntu/jenkins/workspace/project/index.html ubuntu@65.0.80.119:/tmp/
-                    ssh ubuntu@65.0.80.119 "sudo cp /tmp/index.html /var/www/html/"
+                    scp /home/ubuntu/jenkins/workspace/project/index.html ubuntu@65.0.169.14:/tmp/
+                    ssh ubuntu@65.0.169.14 "sudo cp /tmp/index.html /var/www/html/"
                 '''
                 }
             }
