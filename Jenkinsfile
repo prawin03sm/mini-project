@@ -24,7 +24,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh '''
-                    scp /home/ubuntu/jenkins-agent/workspace/Build/index.html ubuntu@65.0.80.119:/tmp/
+                    scp /home/ubuntu/jenkins/workspace/Build/index.html ubuntu@65.0.80.119:/tmp/
                     ssh ubuntu@65.0.80.119 "sudo cp /tmp/index.html /var/www/html/"
                 '''
             }
